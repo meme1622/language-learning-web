@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+   body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: linear-gradient(to right, rgba(123, 104, 238, 0.9), rgba(109, 213, 250, 3));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    backdrop-filter: blur(15px);
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 10);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-container {
+    width: 55%;
+  }
+  
+  .side-text {
+    width: 40%;
+    padding-left: 20px;
+    border-left: 1px solid rgba(204, 204, 204, 0.5);
+    background-color: rgba(241, 241, 241, 2);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #7b68ee;
+    font-weight: 600;
+  }
+  
+  h3 {
+    color: #7b68ee;
+    margin-top: 0;
+    font-weight: 600;
+  }
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 12px 0;
+    display: inline-block;
+    border: 1px solid rgba(204, 204, 204, 0.5);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #7b68ee;
+    color: white;
+    padding: 15px 20px;
+    margin: 20px 0 0 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+  }
+  
+  button:hover {
+    background-color: #6a5acd;
+  }
+  
+  .side-text p {
+    color: rgba(102, 102, 102, 0.5);
+    line-height: 1.5;
+  }
+  
+  .side-text ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .side-text li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .side-text li:before {
+    content: "✓";
+    color: #7b68ee;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="form-container">
+    <h1>For any question contact us </h1>
+    <form>
+      <label for="name">name:</label>
+      <input type="text" id="username" name="name" placeholder="Enter your name">
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" placeholder="Enter your email">
+
+      <label for="message">Message:</label>
+      <input type="message" id="message" name="message" placeholder="Enter your message">
+
+      <button type="submit"><a href="contacted.html">Send Message</button></a>
+
+    </form>
+  </div>
+  <div class="side-text">
+    <h2>Welcome to our platform!</h2>
+    <p> enjoy our website and learn many languages.</p>
+    <p> contuct us for any information you need.</p>
+  </div>
+<body>
+  <header>
+    <nav>
+      <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+</body>
+</html>

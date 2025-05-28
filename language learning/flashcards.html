@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>French Flashcards</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    /* Same style as before */
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f8f8; }
+    header { background-color: #003366; color: white; padding: 1rem; text-align: center; }
+    nav ul { list-style: none; padding: 0; margin: 0; background-color: #0055a5; display: flex; flex-wrap: wrap; }
+    nav li { position: relative; }
+    nav li a { display: block; color: white; text-decoration: none; padding: 14px 20px; }
+    nav li a:hover { background-color: #003366; }
+    main { padding: 20px; }
+    footer { background-color: #003366; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+    .flashcards-container { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px; }
+    .flashcard { width: 200px; height: 120px; perspective: 1000px; }
+    .card-inner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 1s; transform-style: preserve-3d; }
+    .flashcard:hover .card-inner { transform: rotateY(180deg); }
+    .card-front, .card-back {
+      position: absolute; width: 100%; height: 100%; backface-visibility: hidden;
+      background: #f0f0f0; display: flex; align-items: center; justify-content: center;
+      border: 1px solid #ccc; border-radius: 10px; font-size: 1.1rem;
+    }
+    .card-back { transform: rotateY(180deg); background-color: #dff0d8; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>French Flashcards</h1>
+    <nav>
+      <ul>
+        <li><a href="../french.html">Back</a></li>
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Greetings, Polite Phrases & Introductions</h2>
+    <div class="flashcards-container">
+      <div class="flashcard"><div class="card-inner"><div class="card-front">Hello</div><div class="card-back">Bonjour</div></div></div>
+      <div class="flashcard"><div class="card-inner"><div class="card-front">Goodbye</div><div class="card-back">Au revoir</div></div></div>
+      <div class="flashcard"><div class="card-inner"><div class="card-front">Thank you</div><div class="card-back">Merci</div></div></div>
+      <div class="flashcard"><div class="card-inner"><div class="card-front">Please</div><div class="card-back">S’il vous plaît</div></div></div>
+      <div class="flashcard"><div class="card-inner"><div class="card-front">You're welcome</div><div class="card-back">De rien</div></div></div>
+      <div class="flashcard"><div class="card-inner"><div class="card-front">My name is...</div><div class="card-back">Je m'appelle...</div></div></div>
+      <div class="flashcard"><div class="card-inner"><div class="card-front">Nice to meet you</div><div class="card-back">Enchanté(e)</div></div></div>
+      <div class="flashcard"><div class="card-inner"><div class="card-front">How are you?</div><div class="card-back">Ça va ?</div></div></div>
+      <div class="flashcard"><div class="card-inner"><div class="card-front">Good morning</div><div class="card-back">Bonjour</div></div></div>
+      <div class="flashcard"><div class="card-inner"><div class="card-front">Good night</div><div class="card-back">Bonne nuit</div></div></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Language Learning</p>
+  </footer>
+</body>
+</html>
